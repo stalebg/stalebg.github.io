@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ståle Grut</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --text: #1a1a1a;
+            --text-secondary: #555;
+            --link: #1a0dab;
+            --link-visited: #681da8;
+            --bg: #fff;
+            --border: #ccc;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 3rem 1.5rem;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.01em;
+        }
+
+        .affiliation {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+        }
+
+        .affiliation a {
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        a:visited {
+            color: var(--link-visited);
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.25rem;
+        }
+
+        h3 {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+            margin-top: 1.25rem;
+        }
+
+        h3:first-of-type {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .publications {
+            list-style: none;
+        }
+
+        .publications li {
+            margin-bottom: 1rem;
+            padding-left: 0;
+        }
+
+        .publications li:last-child {
+            margin-bottom: 0;
+        }
+
+        .pub-year {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            display: inline-block;
+            width: 3rem;
+            flex-shrink: 0;
+        }
+
+        .pub-entry {
+            display: flex;
+            gap: 0;
+        }
+
+        .pub-content {
+            flex: 1;
+        }
+
+        .pub-title {
+            font-style: italic;
+        }
+
+        .contact-line {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-line a {
+            color: var(--link);
+        }
+
+        .links {
+            font-size: 0.95rem;
+        }
+
+        .links a {
+            margin-right: 1.25rem;
+        }
+
+        .links a:last-child {
+            margin-right: 0;
+        }
+
+        hr {
+            display: none;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 2rem 1rem;
+            }
+
+            .pub-entry {
+                flex-direction: column;
+                gap: 0.125rem;
+            }
+
+            .pub-year {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ståle Grut</h1>
+        <p class="affiliation">Doctoral Research Fellow, <a href="https://www.hf.uio.no/imk/english/">Dept. of Media and Communication</a>, University of Oslo</p>
+    </header>
+
+    <section>
+        <h2>About</h2>
+        <p>I am a PhD candidate in media studies at the University of Oslo, working on the project <a href="https://www.hf.uio.no/imk/english/research/projects/photofake/">Photofake</a>. My research focuses on fact-checking, journalism, and visual epistemology. I serve on the editorial team of <a href="https://tidsskrift.dk/mediekultur">MedieKultur</a>.</p>
+        <p>Previously, I worked as a journalist and strategic advisor at <a href="https://nrkbeta.no">NRKbeta</a>, NRK's R&D unit. I hold an MA in New Media and Digital Culture from the University of Amsterdam.</p>
+    </section>
+
+    <section>
+        <h2>Publications</h2>
+        
+        <h3>Articles</h3>
+        <ul class="publications">
+            <li>
+                <div class="pub-entry">
+                    <span class="pub-year">2025</span>
+                    <div class="pub-content">Grut, S., Kempton, A. M., &amp; Reinertsen, H. KI og effektivisering: Hvordan GPT-4 fant 155.000 overflødige årsverk i norsk offentlig sektor. <span class="pub-title">Stat &amp; Styring</span> 35(3). <a href="https://doi.org/10.18261/stat.35.3.1">doi</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="pub-entry">
+                    <span class="pub-year">2025</span>
+                    <div class="pub-content">Grut, S. A visual verification tax comes due. <a href="https://www.niemanlab.org/2024/12/a-visual-verification-tax-comes-due/">Nieman Lab</a></div>
+                </div>
+            </li>
+        </ul>
+
+        <h3>Books</h3>
+        <ul class="publications">
+            <li>
+                <div class="pub-entry">
+                    <span class="pub-year">2024</span>
+                    <div class="pub-content">Grut, S. <span class="pub-title">Evaluating Digital Sources in Journalism</span>. <a href="https://www.routledge.com/Evaluating-Digital-Sources-in-Journalism-An-Introduction-to-Digital-Source-Criticism/Grut/p/book/9781032582948">Routledge</a></div>
+                </div>
+            </li>
+            <li>
+                <div class="pub-entry">
+                    <span class="pub-year">2021</span>
+                    <div class="pub-content">Grut, S. <span class="pub-title">Digital Kildekritikk</span>. <a href="https://kildekritikk.no">Gyldendal</a></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p class="contact-line">stale.grut [at] media.uio.no</p>
+        <p class="links"><a href="https://www.hf.uio.no/imk/english/people/aca/temporary/stalegrut/">UiO</a> <a href="https://scholar.google.com/citations?user=e4k5Z30AAAAJ&hl=en&oi=ao">Scholar</a> <a href="https://bsky.app/profile/stalebg.bsky.social">Bluesky</a></p>
+    </section>
+</body>
+</html>
 
